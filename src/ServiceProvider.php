@@ -32,5 +32,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         });
 
         \View::addLocation(__DIR__ . '/../resources/views');
+
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
     }
 }
